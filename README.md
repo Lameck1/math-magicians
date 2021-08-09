@@ -1,4 +1,4 @@
-# Sea Foods
+# Math Magicians
 
 ## Table of Contents
 
