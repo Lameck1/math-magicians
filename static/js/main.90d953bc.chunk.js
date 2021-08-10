@@ -1,2 +1,0 @@
-(this["webpackJsonpmath-magicians"]=this["webpackJsonpmath-magicians"]||[]).push([[0],{11:function(e,c,n){"use strict";n.r(c);var t=n(1),a=n.n(t),i=n(3),s=n.n(i),r=(n(8),n(9),n(0));var h=function(){return Object(r.jsx)("div",{className:"App",children:Object(r.jsx)("header",{className:"App-header",children:Object(r.jsx)("h1",{children:"Math Magicians"})})})};s.a.render(Object(r.jsx)(a.a.StrictMode,{children:Object(r.jsx)(h,{})}),document.getElementById("root"))},8:function(e,c,n){},9:function(e,c,n){}},[[11,1,2]]]);
-//# sourceMappingURL=main.90d953bc.chunk.js.map
