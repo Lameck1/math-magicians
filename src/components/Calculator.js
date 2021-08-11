@@ -1,31 +1,26 @@
-import React from 'react';
+import { useState } from 'react';
 import Input from './Input';
 import calculate from '../logic/calculate';
 import Output from './Output';
 
-export default class Calculator extends React.Component {
-  constructor() {
-    super();
-    this.state = {
-      total: null,
-      next: null,
-      operation: null,
-    };
+const Calculator = () => {
+  const [state, setState] = useState({
+    total: null,
+    next: null,
+    operation: null,
+  });
 
-    this.handleClick = this.handleClick.bind(this);
-  }
+  const handleClick = (buttonName) => {
+    setState({ ...state, ...calculate(state, buttonName) });
+  };
 
-  handleClick(buttonName) {
-    this.setState((prevState) => calculate(prevState, buttonName));
-  }
+  const { next, total } = state;
+  return (
+    <div className="calculator">
+      <Output value={next || total || '0'} />
+      <Input clickHandler={handleClick} />
+    </div>
+  );
+};
 
-  render() {
-    const { next, total, operation } = this.state;
-    return (
-      <div className="calculator">
-        <Output value={next || total || operation || '0'} />
-        <Input clickHandler={this.handleClick} />
-      </div>
-    );
-  }
-}
+export default Calculator;
