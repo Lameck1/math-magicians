@@ -42,7 +42,7 @@ h1 {
   background-color: #e3e3e3;
 }
 
-.col-span-2 {
+.spanning {
   grid-column: 1 / span 2;
 }
 
@@ -75,6 +75,7 @@ h1 {
   padding: 15px 5px;
   flex: 1;
   background-color: #757575;
+  text-align: end;
 }
 
 .operator {
