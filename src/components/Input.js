@@ -1,51 +1,38 @@
-import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './Button';
 
-class Input extends React.Component {
-  constructor(props) {
-    super(props);
-    this.handleClick = this.handleClick.bind(this);
-  }
-
-  handleClick(buttonName) {
-    const { clickHandler } = this.props;
+const Input = ({ clickHandler }) => {
+  const handleClick = (buttonName) => {
     clickHandler(buttonName);
-  }
+  };
 
-  render() {
-    return (
-      <div className="buttons-grid">
-        <Button clickHandler={this.handleClick} name="AC" />
-        <Button clickHandler={this.handleClick} name="+/-" />
-        <Button clickHandler={this.handleClick} name="%" />
-        <Button clickHandler={this.handleClick} operator name="÷" />
-        <Button clickHandler={this.handleClick} name="7" />
-        <Button clickHandler={this.handleClick} name="8" />
-        <Button clickHandler={this.handleClick} name="9" />
-        <Button clickHandler={this.handleClick} operator name="x" />
-        <Button clickHandler={this.handleClick} name="4" />
-        <Button clickHandler={this.handleClick} name="5" />
-        <Button clickHandler={this.handleClick} name="6" />
-        <Button clickHandler={this.handleClick} operator name="-" />
-        <Button clickHandler={this.handleClick} name="1" />
-        <Button clickHandler={this.handleClick} name="2" />
-        <Button clickHandler={this.handleClick} name="3" />
-        <Button clickHandler={this.handleClick} operator name="+" />
-        <Button clickHandler={this.handleClick} spanning name="0" />
-        <Button clickHandler={this.handleClick} name="." />
-        <Button clickHandler={this.handleClick} operator name="=" />
-      </div>
-    );
-  }
-}
-
-Input.propTypes = {
-  clickHandler: PropTypes.func,
+  return (
+    <div className="buttons-grid">
+      <Button clickHandler={handleClick} name="AC" />
+      <Button clickHandler={handleClick} name="+/-" />
+      <Button clickHandler={handleClick} name="%" />
+      <Button clickHandler={handleClick} operator name="÷" />
+      <Button clickHandler={handleClick} name="7" />
+      <Button clickHandler={handleClick} name="8" />
+      <Button clickHandler={handleClick} name="9" />
+      <Button clickHandler={handleClick} operator name="x" />
+      <Button clickHandler={handleClick} name="4" />
+      <Button clickHandler={handleClick} name="5" />
+      <Button clickHandler={handleClick} name="6" />
+      <Button clickHandler={handleClick} operator name="-" />
+      <Button clickHandler={handleClick} name="1" />
+      <Button clickHandler={handleClick} name="2" />
+      <Button clickHandler={handleClick} name="3" />
+      <Button clickHandler={handleClick} operator name="+" />
+      <Button clickHandler={handleClick} spanning name="0" />
+      <Button clickHandler={handleClick} name="." />
+      <Button clickHandler={handleClick} operator name="=" />
+    </div>
+  );
 };
 
-Input.defaultProps = {
-  clickHandler: null,
+Input.propTypes = {
+  clickHandler: PropTypes.func.isRequired,
 };
 
 export default Input;
