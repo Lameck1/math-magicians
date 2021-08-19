@@ -16,11 +16,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
+}
+
+#root {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #bdbdbd;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #4582a4;
+}
+
+.App {
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1 {
+  padding: 20px;
+}
+
+p {
+  line-height: 2.1;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  color: #4582a4;
+  padding: 0 8px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.logo:hover {
+  color: #ffecda;
+}
+
+.d-flex {
+  display: flex;
 }
 
 header {
-  text-align: center;
-  padding: 20px 0;
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+}
+
+section {
+  width: 100%;
+  flex: 1;
+}
+
+article {
+  padding: 20px;
+}
+
+.nav-links {
+  align-items: center;
 }
 
 h1 {
@@ -28,9 +93,15 @@ h1 {
   font-weight: 600;
 }
 
+.calculator-sect {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .calculator {
-  margin: 0 auto;
-  width: 25%;
+  align-items: flex-start;
+  width: 45%;
+  padding: 20px;
 }
 
 .buttons-grid {
@@ -65,6 +136,7 @@ h1 {
 .output {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .output span {
@@ -76,8 +148,15 @@ h1 {
   flex: 1;
   background-color: #757575;
   text-align: end;
+  width: 100%;
 }
 
 .operator {
   background-color: #ffb300;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #4582a4;
 }
