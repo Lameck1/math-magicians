@@ -16,10 +16,15 @@ const Calculator = () => {
 
   const { next, total } = state;
   return (
-    <div className="calculator">
-      <Output value={next || total || '0'} />
-      <Input clickHandler={handleClick} />
-    </div>
+    <section className="calculator-sect d-flex">
+      <div>
+        <h1>Let&apos;s do some math!</h1>
+      </div>
+      <div className="calculator">
+        <Output value={next || total || '0'} />
+        <Input clickHandler={handleClick} />
+      </div>
+    </section>
   );
 };
 
