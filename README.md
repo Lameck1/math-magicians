@@ -16,9 +16,11 @@
 * Make simple calculations.
 * Read a random math-related quote.
 
-<!-- ![screenshot]() -->
+![screenshot](./src/assets/images/screenshot.png)
 
-## [Live Demo](https://lameck1.github.io/math-magicians/)
+## [Live Demo - GH pages](https://lameck1.github.io/math-magicians/)
+## [Live Demo - Netlify](https://quirky-minsky-736590.netlify.app/)
+## [Live Demo - Heroku](https://mathmagician.herokuapp.com/)
 
 ## Built With
 
