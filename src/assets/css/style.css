@@ -1,0 +1,162 @@
+@import 'reset.css';
+
+body {
+  margin: 0;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Oxygen',
+    'Ubuntu',
+    'Cantarell',
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #eee;
+}
+
+#root {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #bdbdbd;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #4582a4;
+}
+
+.App {
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+p,
+h1 {
+  padding: 20px;
+}
+
+p {
+  line-height: 2.1;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+
+.nav-link {
+  color: #4582a4;
+  padding: 0 8px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.nav-link:hover,
+.logo:hover {
+  color: #ffecda;
+}
+
+.d-flex {
+  display: flex;
+}
+
+header {
+  padding: 20px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: rgba(60, 64, 67, 0.3) 0 1px 2px 0, rgba(60, 64, 67, 0.15) 0 1px 3px 1px;
+}
+
+section {
+  width: 100%;
+  flex: 1;
+}
+
+article {
+  padding: 20px;
+}
+
+.nav-links {
+  align-items: center;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.calculator-sect {
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.calculator {
+  align-items: flex-start;
+  width: 45%;
+  padding: 20px;
+}
+
+.buttons-grid {
+  display: -ms-grid;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-columns: repeat(4, 1fr);
+  gap: 1px;
+  background-color: #e3e3e3;
+}
+
+.spanning {
+  grid-column: 1 / span 2;
+}
+
+.input-btn {
+  background-color: #eee;
+  border: none;
+  outline: none;
+  padding: 15px;
+  font-size: 1rem;
+}
+
+.input-btn:hover {
+  opacity: 0.5;
+}
+
+.input-btn:focus {
+  border: 0.5px solid #000;
+}
+
+.output {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.output span {
+  overflow: hidden;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.3rem;
+  padding: 15px 5px;
+  flex: 1;
+  background-color: #757575;
+  text-align: end;
+  width: 100%;
+}
+
+.operator {
+  background-color: #ffb300;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #4582a4;
+}
