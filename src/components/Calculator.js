@@ -14,14 +14,14 @@ const Calculator = () => {
     setState({ ...state, ...calculate(state, buttonName) });
   };
 
-  const { next, total } = state;
+  const { next, total, operation } = state;
   return (
     <section className="calculator-sect d-flex">
       <div>
         <h1>Let&apos;s do some math!</h1>
       </div>
       <div className="calculator">
-        <Output value={next || total || '0'} />
+        <Output value={next || operation || total || '0'} />
         <Input clickHandler={handleClick} />
       </div>
     </section>
